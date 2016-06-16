@@ -10,7 +10,7 @@ import Moya
 
 extension TargetType {
     
-    func stubFileName(forStatusCode statusCode: String) -> String? {
+    func stubFileName(forStatusCode statusCode: Int) -> String? {
         guard let stubsPath = ApiConstants.stubsPath else { return nil }
         if let selfString = "\(self)".componentsSeparatedByString("(").first {
             return "\(stubsPath)\(self.dynamicType)_\(selfString)_\(statusCode).json"

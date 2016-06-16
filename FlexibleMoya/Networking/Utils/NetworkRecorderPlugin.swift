@@ -19,7 +19,7 @@ public final class NetworkRecorderPlugin: PluginType {
         case .Success(let response):
             do {
                 let text = try response.mapString()
-                if let stubsPath = target.stubFileName(forStatusCode: "\(response.statusCode)") {
+                if let stubsPath = target.stubFileName(forStatusCode: response.statusCode) {
                     try text.writeToFile(stubsPath, atomically: true, encoding: NSUTF8StringEncoding)
                 }
             } catch {

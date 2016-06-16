@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14CE287A1D1221DA00DD1F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28791D1221DA00DD1F93 /* AppDelegate.swift */; };
-		14CE287C1D1221DA00DD1F93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE287B1D1221DA00DD1F93 /* ViewController.swift */; };
+		14CE287C1D1221DA00DD1F93 /* ViewControllerWithNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE287B1D1221DA00DD1F93 /* ViewControllerWithNetwork.swift */; };
 		14CE287F1D1221DA00DD1F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CE287D1D1221DA00DD1F93 /* Main.storyboard */; };
 		14CE28811D1221DA00DD1F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CE28801D1221DA00DD1F93 /* Assets.xcassets */; };
 		14CE28841D1221DA00DD1F93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CE28821D1221DA00DD1F93 /* LaunchScreen.storyboard */; };
@@ -16,13 +16,19 @@
 		14CE28921D1224A000DD1F93 /* NetworkRecorderPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28911D1224A000DD1F93 /* NetworkRecorderPlugin.swift */; };
 		14CE28941D12250400DD1F93 /* TargetType+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28931D12250400DD1F93 /* TargetType+Utils.swift */; };
 		14CE28961D12253000DD1F93 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28951D12253000DD1F93 /* ApiConstants.swift */; };
+		14CE28981D12260000DD1F93 /* StubbableTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28971D12260000DD1F93 /* StubbableTargetType.swift */; };
+		14CE289A1D12288400DD1F93 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28991D12288400DD1F93 /* Authenticator.swift */; };
+		14CE289C1D12292F00DD1F93 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE289B1D12292F00DD1F93 /* AuthToken.swift */; };
+		14CE289E1D122C1300DD1F93 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE289D1D122C1300DD1F93 /* GitHubAPI.swift */; };
+		14CE28A01D122F1000DD1F93 /* MoyaUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE289F1D122F1000DD1F93 /* MoyaUtils.swift */; };
+		14CE28A21D12314300DD1F93 /* ViewControllerWithStubbing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28A11D12314300DD1F93 /* ViewControllerWithStubbing.swift */; };
 		EBBBC09749D1C972944739C3 /* Pods_FlexibleMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF869B3D6D9552C4526F84F /* Pods_FlexibleMoya.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14CE28761D1221DA00DD1F93 /* FlexibleMoya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexibleMoya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CE28791D1221DA00DD1F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14CE287B1D1221DA00DD1F93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14CE287B1D1221DA00DD1F93 /* ViewControllerWithNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithNetwork.swift; sourceTree = "<group>"; };
 		14CE287E1D1221DA00DD1F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14CE28801D1221DA00DD1F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14CE28831D1221DA00DD1F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +37,12 @@
 		14CE28911D1224A000DD1F93 /* NetworkRecorderPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRecorderPlugin.swift; path = Networking/Utils/NetworkRecorderPlugin.swift; sourceTree = "<group>"; };
 		14CE28931D12250400DD1F93 /* TargetType+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TargetType+Utils.swift"; path = "Networking/Utils/TargetType+Utils.swift"; sourceTree = "<group>"; };
 		14CE28951D12253000DD1F93 /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiConstants.swift; path = Networking/Utils/ApiConstants.swift; sourceTree = "<group>"; };
+		14CE28971D12260000DD1F93 /* StubbableTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StubbableTargetType.swift; path = Networking/Utils/StubbableTargetType.swift; sourceTree = "<group>"; };
+		14CE28991D12288400DD1F93 /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Networking/Utils/Authenticator.swift; sourceTree = "<group>"; };
+		14CE289B1D12292F00DD1F93 /* AuthToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthToken.swift; path = Networking/Utils/AuthToken.swift; sourceTree = "<group>"; };
+		14CE289D1D122C1300DD1F93 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitHubAPI.swift; path = Networking/GitHubAPI.swift; sourceTree = "<group>"; };
+		14CE289F1D122F1000DD1F93 /* MoyaUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaUtils.swift; path = Networking/Utils/MoyaUtils.swift; sourceTree = "<group>"; };
+		14CE28A11D12314300DD1F93 /* ViewControllerWithStubbing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithStubbing.swift; sourceTree = "<group>"; };
 		5AF869B3D6D9552C4526F84F /* Pods_FlexibleMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexibleMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9300CCFE5E2D4123E6214A45 /* Pods-FlexibleMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexibleMoya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexibleMoya/Pods-FlexibleMoya.debug.xcconfig"; sourceTree = "<group>"; };
 		9FBFAC38A2025DE99DBA8C7E /* Pods-FlexibleMoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexibleMoya.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexibleMoya/Pods-FlexibleMoya.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				14CE288B1D1222D200DD1F93 /* Networking */,
+				14CE289D1D122C1300DD1F93 /* GitHubAPI.swift */,
 				14CE28791D1221DA00DD1F93 /* AppDelegate.swift */,
-				14CE287B1D1221DA00DD1F93 /* ViewController.swift */,
+				14CE287B1D1221DA00DD1F93 /* ViewControllerWithNetwork.swift */,
+				14CE28A11D12314300DD1F93 /* ViewControllerWithStubbing.swift */,
 				14CE287D1D1221DA00DD1F93 /* Main.storyboard */,
 				14CE28801D1221DA00DD1F93 /* Assets.xcassets */,
 				14CE28821D1221DA00DD1F93 /* LaunchScreen.storyboard */,
@@ -92,9 +106,13 @@
 		14CE28901D12248C00DD1F93 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				14CE28911D1224A000DD1F93 /* NetworkRecorderPlugin.swift */,
-				14CE28931D12250400DD1F93 /* TargetType+Utils.swift */,
 				14CE28951D12253000DD1F93 /* ApiConstants.swift */,
+				14CE28991D12288400DD1F93 /* Authenticator.swift */,
+				14CE289B1D12292F00DD1F93 /* AuthToken.swift */,
+				14CE28911D1224A000DD1F93 /* NetworkRecorderPlugin.swift */,
+				14CE28971D12260000DD1F93 /* StubbableTargetType.swift */,
+				14CE28931D12250400DD1F93 /* TargetType+Utils.swift */,
+				14CE289F1D122F1000DD1F93 /* MoyaUtils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -253,9 +271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14CE287C1D1221DA00DD1F93 /* ViewController.swift in Sources */,
+				14CE287C1D1221DA00DD1F93 /* ViewControllerWithNetwork.swift in Sources */,
+				14CE28A21D12314300DD1F93 /* ViewControllerWithStubbing.swift in Sources */,
+				14CE289E1D122C1300DD1F93 /* GitHubAPI.swift in Sources */,
+				14CE28981D12260000DD1F93 /* StubbableTargetType.swift in Sources */,
+				14CE289A1D12288400DD1F93 /* Authenticator.swift in Sources */,
 				14CE287A1D1221DA00DD1F93 /* AppDelegate.swift in Sources */,
+				14CE28A01D122F1000DD1F93 /* MoyaUtils.swift in Sources */,
 				14CE28961D12253000DD1F93 /* ApiConstants.swift in Sources */,
+				14CE289C1D12292F00DD1F93 /* AuthToken.swift in Sources */,
 				14CE28941D12250400DD1F93 /* TargetType+Utils.swift in Sources */,
 				14CE28921D1224A000DD1F93 /* NetworkRecorderPlugin.swift in Sources */,
 			);
