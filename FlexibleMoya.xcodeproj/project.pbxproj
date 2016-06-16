@@ -12,6 +12,10 @@
 		14CE287F1D1221DA00DD1F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CE287D1D1221DA00DD1F93 /* Main.storyboard */; };
 		14CE28811D1221DA00DD1F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CE28801D1221DA00DD1F93 /* Assets.xcassets */; };
 		14CE28841D1221DA00DD1F93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CE28821D1221DA00DD1F93 /* LaunchScreen.storyboard */; };
+		14CE288F1D12246900DD1F93 /* Stubs in Resources */ = {isa = PBXBuildFile; fileRef = 14CE288E1D12246900DD1F93 /* Stubs */; };
+		14CE28921D1224A000DD1F93 /* NetworkRecorderPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28911D1224A000DD1F93 /* NetworkRecorderPlugin.swift */; };
+		14CE28941D12250400DD1F93 /* TargetType+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28931D12250400DD1F93 /* TargetType+Utils.swift */; };
+		14CE28961D12253000DD1F93 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE28951D12253000DD1F93 /* ApiConstants.swift */; };
 		EBBBC09749D1C972944739C3 /* Pods_FlexibleMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF869B3D6D9552C4526F84F /* Pods_FlexibleMoya.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 		14CE28801D1221DA00DD1F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14CE28831D1221DA00DD1F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14CE28851D1221DA00DD1F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14CE288E1D12246900DD1F93 /* Stubs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Stubs; path = Networking/Stubs; sourceTree = "<group>"; };
+		14CE28911D1224A000DD1F93 /* NetworkRecorderPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRecorderPlugin.swift; path = Networking/Utils/NetworkRecorderPlugin.swift; sourceTree = "<group>"; };
+		14CE28931D12250400DD1F93 /* TargetType+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TargetType+Utils.swift"; path = "Networking/Utils/TargetType+Utils.swift"; sourceTree = "<group>"; };
+		14CE28951D12253000DD1F93 /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiConstants.swift; path = Networking/Utils/ApiConstants.swift; sourceTree = "<group>"; };
 		5AF869B3D6D9552C4526F84F /* Pods_FlexibleMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexibleMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9300CCFE5E2D4123E6214A45 /* Pods-FlexibleMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexibleMoya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexibleMoya/Pods-FlexibleMoya.debug.xcconfig"; sourceTree = "<group>"; };
 		9FBFAC38A2025DE99DBA8C7E /* Pods-FlexibleMoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexibleMoya.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexibleMoya/Pods-FlexibleMoya.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 		14CE28781D1221DA00DD1F93 /* FlexibleMoya */ = {
 			isa = PBXGroup;
 			children = (
+				14CE288B1D1222D200DD1F93 /* Networking */,
 				14CE28791D1221DA00DD1F93 /* AppDelegate.swift */,
 				14CE287B1D1221DA00DD1F93 /* ViewController.swift */,
 				14CE287D1D1221DA00DD1F93 /* Main.storyboard */,
@@ -69,6 +78,25 @@
 				14CE28851D1221DA00DD1F93 /* Info.plist */,
 			);
 			path = FlexibleMoya;
+			sourceTree = "<group>";
+		};
+		14CE288B1D1222D200DD1F93 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				14CE28901D12248C00DD1F93 /* Utils */,
+				14CE288E1D12246900DD1F93 /* Stubs */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		14CE28901D12248C00DD1F93 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14CE28911D1224A000DD1F93 /* NetworkRecorderPlugin.swift */,
+				14CE28931D12250400DD1F93 /* TargetType+Utils.swift */,
+				14CE28951D12253000DD1F93 /* ApiConstants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		6DFB0872ED1811C929AF61CD /* Pods */ = {
@@ -99,6 +127,7 @@
 				14CE28721D1221DA00DD1F93 /* Sources */,
 				14CE28731D1221DA00DD1F93 /* Frameworks */,
 				14CE28741D1221DA00DD1F93 /* Resources */,
+				14CE288D1D12243000DD1F93 /* ShellScript */,
 				E36638D46DCDCD3522761122 /* [CP] Embed Pods Frameworks */,
 				2EF2234BFE0A0D34507C8BF2 /* [CP] Copy Pods Resources */,
 			);
@@ -151,6 +180,7 @@
 			files = (
 				14CE28841D1221DA00DD1F93 /* LaunchScreen.storyboard in Resources */,
 				14CE28811D1221DA00DD1F93 /* Assets.xcassets in Resources */,
+				14CE288F1D12246900DD1F93 /* Stubs in Resources */,
 				14CE287F1D1221DA00DD1F93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +188,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		14CE288D1D12243000DD1F93 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Config\n\n# Path to stubs file.\n# Remember to end it with /\n# This should be a folder reference, not a group (in Xcode)\npath=\"/FlexibleMoya/Networking/Stubs/\"\n\n# Script\ncurrentDir=$(pwd)\nstubsPath=\"${currentDir}${path}\"\ninfoplist=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\n\nif [[ -d $stubsPath ]]; then\n# if StubsDirectoryPath string doesn't exist, add it\n/usr/libexec/PlistBuddy -c \"Add :StubsDirectoryPath string $stubsPath\" \"${infoplist}\"\n# and if StubsDirectoryPath already existed, update it\n/usr/libexec/PlistBuddy -c \"Set :StubsDirectoryPath $stubsPath\" \"${infoplist}\"\nfi";
+		};
 		2EF2234BFE0A0D34507C8BF2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +255,9 @@
 			files = (
 				14CE287C1D1221DA00DD1F93 /* ViewController.swift in Sources */,
 				14CE287A1D1221DA00DD1F93 /* AppDelegate.swift in Sources */,
+				14CE28961D12253000DD1F93 /* ApiConstants.swift in Sources */,
+				14CE28941D12250400DD1F93 /* TargetType+Utils.swift in Sources */,
+				14CE28921D1224A000DD1F93 /* NetworkRecorderPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

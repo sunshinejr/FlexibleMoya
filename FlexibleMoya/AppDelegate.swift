@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  FlexibleMoya
 //
-//  Created by Lukasz Mroz on 16.06.2016.
+//  Created by Sunshinejr on 16.06.2016.
 //  Copyright © 2016 Sunshinejr. All rights reserved.
 //
 
