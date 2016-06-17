@@ -16,7 +16,9 @@ import UIKit
 /// otherwise just delete it - reallt simple!
 class ViewControllerWithStubbing: UIViewController {
     
-    let provider = MoyaProvider<GitHubAPI>(endpointClosure: MoyaUtils.endpointClosure(), stubClosure: MoyaProvider.ImmediatelyStub, plugins: [NetworkRecorderPlugin()])
+    let provider = MoyaProvider<GitHubAPI>(endpointClosure: MoyaUtils.endpointClosure(),
+                                           stubClosure: MoyaProvider.ImmediatelyStub,
+                                           plugins: [NetworkRecorderPlugin()])
     
     override func viewDidLoad() {
         super.viewDidLoad()
